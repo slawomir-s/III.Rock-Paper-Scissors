@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One')
+$hue: #fff
+
+body
+    font-family: 'Francois One', sans-serif
+    text-align: center
+    background: url('http://www.inglebygallery.com/wp-content/gallery/artist-alec-finlay/af_scissors_paper_rock_web.jpg') no-repeat center fixed
+    background-size: cover
+    color: $hue
+    
+*
+    box-sizing: border-box
+
+.row:before,
+.row:after 
+    content: ""
+    display: table
+    clear: both
+
+.container 
+    max-width: 1200px
+    margin: 10px auto
+    padding: 20px
+
+header 
+    h1 
+        font-size: 30px
+        margin-bottom: 30px
+        color: rgb(217, 83, 79);
+
+section
+    background: rgba(193, 193, 190, 0.7)
+    margin: 0px 100px
+    span.label 
+        font-size: 20px
+        display: inline-block
+        margin: 2px
+    .symbols 
+        .btn 
+            margin: 25px 10px
+            display: inline-block
+            width: 100px
+            height: 100px
+            border: 1px solid #999
+            border-radius: 50%
+            background: $hue
+            span 
+                display: relative
+                color: #000
+                background: $hue
+            i 
+                color: #000
+                background: $hue
+                font-size: 40px
+            p 
+                color: #000
+    .result 
+        font-size: 20px
+        padding: 15px
+        span.badge 
+            font-size: 30px
+
+.sweet-alert
+    input
+        color: #000
+
+@media (max-width: 480px) 
+  
+    section 
+        background: rgba(193, 193, 190, 0.5)
+        margin: 0px 20px
+        .result 
+            font-size: 15px
+        .symbols 
+            .btn 
+                width: 75px
+                height: 75px  
+                i
+                    font-size: 30px      
